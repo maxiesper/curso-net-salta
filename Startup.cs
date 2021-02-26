@@ -48,23 +48,20 @@ namespace proyectomvc
 
             app.UseAuthorization();
 
-           // app.UseEndpoints(endpoints =>
-           // {
-           //     endpoints.MapGet("/saludar/", async context =>
-             //   {
-               //     await context.Response.WriteAsync("esto es un saludo");
-               // });
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapGet("/saludar/", async context =>
+              {
+                   await context.Response.WriteAsync("esto es un saludo");
+               });
 
-               // endpoints.MapGet("/", async context =>
-               // {
-               //     await context.Response.WriteAsync("<h1>hola salta </h1>");
-               // });
 
-               // endpoints.MapControllerRoute(
-              //      name: "default",
-               //     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+                endpoints.MapControllerRoute(
+                   name: "default",
+                   pattern: "{controller=Home}/{action=Index}/{id?}");
                     
-            //});
+            });
         }
     }
 }

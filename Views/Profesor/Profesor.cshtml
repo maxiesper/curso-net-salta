@@ -1,0 +1,53 @@
+<body>
+   <div><h1>Profesor</h1>
+<div>
+<table border="2">
+<tr>
+    <td>columna 1</td>
+    <td>columna 2</td>
+    <td>columna 3</td>
+    <td>columna 4</td>
+</tr>
+
+<tr>
+    <td>valor 1</td>
+    <td>valor 2</td>
+    <td>valor 3</td>
+    <td>valor 4</td>
+</tr>
+
+</table>
+
+</div>
+
+<di> <h2>registrar Profesor</h2></di>
+<div>
+    <form action="@Url.Action("Guardar","Profesor")" method="POST">
+    <div> 
+    <label for="nombre">nombre</label>
+        <input type="text" id="nombre" name="nombre">
+    </div>
+       
+       <div>
+           <label for="apellido">apellido</label>
+        <input type="text" id="apellido" name="apellido">
+    </div> 
+    <div>
+        <label for="email">email</label>
+     <input type="email" id="email" name="email">
+ </div> 
+    <div>
+        <label for="estadoCivil">Estado Civil</label>
+        <input type="radio" name="estadoCivil" value="soltero">soltero
+        <input type="radio" name="estadoCivil" value="casado"> casado
+        <input type="radio" name="estadoCivil" value="divorciado"> divorciado
+        <input type="radio" name="estadoCivil" value="viudo"> viudo
+    </div>
+      <div> 
+          <input type="submit" value="guardar">
+        </div> 
+   </form>
+</div>
+
+</div> 
+</body>
